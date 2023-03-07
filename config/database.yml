@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: hello_rails_react_development,
+  database: brand_review_app_development,
   adapter: postgresql
   encoding: unicode
   username: postgres
@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: hello_rails_react_test
+  database: brand_review_app_test
   adapter: postgresql
   encoding: unicode
   username: postgres
