@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.2', '>= 7.0.2.4'
@@ -29,13 +29,15 @@ gem 'jbuilder'
 
 # Add webpacker and react-rails gems
 gem 'react-rails'
-gem 'webpacker'
+gem 'webpacker', '~> 5.0'
 
 # Add rdoc gem, because rails c doesn't run
 gem 'rdoc'
 
 # Add rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'tzinfo-data'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
